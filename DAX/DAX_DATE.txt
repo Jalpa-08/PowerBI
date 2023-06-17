@@ -1,0 +1,6 @@
+
+Year_Diff = DATEDIFF(AirPassengers[Month],TODAY(),YEAR)
+Month_Diff = DATEADD(AirPassengers[Month],10,YEAR)
+Month_Diff = DATEADD(AirPassengers[Month],-10,YEAR)
+
+New_Table = CALENDAR(DATE(1949,1,1),DATE(1950,12,31))
